@@ -7,7 +7,7 @@ import json
 import logging
 import re
 
-from mne.externals.tqdm import tqdm
+from tqdm import tqdm
 from selenium.webdriver.common.by import By
 
 logging.basicConfig(format='%(asctime)s - %(message)s',
