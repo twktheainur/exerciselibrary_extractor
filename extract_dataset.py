@@ -20,6 +20,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import ElementClickInterceptedException
 from selenium.webdriver.chrome.options import Options
 
+from pathlib import Path
+
+Path("corpus/videos").mkdir(parents=True, exist_ok=True)
+
 options = Options()
 # options.add_argument('--headless')
 # options.add_argument('--disable-gpu')

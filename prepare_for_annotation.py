@@ -4,6 +4,9 @@ import spacy
 import tqdm
 nlp = spacy.load("en_core_web_trf")
 
+from pathlib import Path
+Path("corpus/wsd").mkdir(parents=True, exist_ok=True)
+
 xml_content = "<?xml version='1.0' encoding='UTF-8'?>\n"
 xml_content += '<corpus lang="en" source="exerciselibrary">\n'
 
